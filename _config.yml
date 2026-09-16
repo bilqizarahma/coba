@@ -1,0 +1,10 @@
+title: Pencarian & Penambangan Web
+author: Bilqizah Rahma Ilayya Syahdewi
+logo: foto.jpeg
+
+sphinx:
+  config:
+    copyright: "2026"
+
+execute:
+  execute_notebooks: "off"
