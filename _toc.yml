@@ -1,5 +1,5 @@
 format: jb-book
 root: index
 chapters:
-* file: Berita_Detikcom_Tugas_1_PPW
-* file: Prepocessing_Tugas_2_PPW
+  - file: Berita_Detikcom_Tugas_1_PPW
+  - file: Prepocessing_Tugas_2_PPW
