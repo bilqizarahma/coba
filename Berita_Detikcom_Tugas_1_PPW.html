@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Berita_Detikcom_Tugas_1_PPW';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Profile Pemilik Repository" href="index.html" />
+    <link rel="prev" title="Profile Repository" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,12 +171,12 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="index.html">
-                    Profile Pemilik Repository
+                    Profile Repository
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Crawling Berita Detikcom</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling Berita Detikcom</a></li>
 </ul>
 
     </div>
@@ -325,9 +325,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-library"><strong>Install Library</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi"><strong>Ambil Isi Artikel Lengkap Menggunakan trafilatura (tqdm + Paginasi)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-download-file-excel"><strong>Save &amp; Download File Excel</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-library">Install Library</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi">Ambil Isi Artikel Lengkap Menggunakan trafilatura (tqdm + Paginasi)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-download-file-excel">Save &amp; Download File Excel</a></li>
 </ul>
             </nav>
         </div>
@@ -340,9 +340,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="crawling-berita-detikcom">
-<h1><strong>Crawling Berita Detikcom</strong><a class="headerlink" href="#crawling-berita-detikcom" title="Permalink to this heading">#</a></h1>
+<h1>Crawling Berita Detikcom<a class="headerlink" href="#crawling-berita-detikcom" title="Permalink to this heading">#</a></h1>
 <section id="install-library">
-<h2><strong>Install Library</strong><a class="headerlink" href="#install-library" title="Permalink to this heading">#</a></h2>
+<h2>Install Library<a class="headerlink" href="#install-library" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip install requests beautifulsoup4 pandas openpyxl tqdm trafilatura
@@ -405,7 +405,7 @@ Successfully installed courlan-1.4.0 dateparser-1.4.3 htmldate-1.10.0 justext-3.
 <p>Code diatas berfungsi untuk menginstall pustaka pustaka pyhton yang dibutuhkan ke dalam lingkungan kerja seperti google colab, mencakup request untuk mengirim permintaan HTTP, beautifulsoup4 dan trafilatura untuk scraping serta ekstraksi konten web, pandas dan openpyxl untuk pengolahan data serta pembuatan file excel, serta tqdm untuk menampilkan indikator proses.</p>
 </section>
 <section id="ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi">
-<h2><strong>Ambil Isi Artikel Lengkap Menggunakan trafilatura (tqdm + Paginasi)</strong><a class="headerlink" href="#ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi" title="Permalink to this heading">#</a></h2>
+<h2>Ambil Isi Artikel Lengkap Menggunakan trafilatura (tqdm + Paginasi)<a class="headerlink" href="#ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
@@ -563,7 +563,7 @@ Successfully installed courlan-1.4.0 dateparser-1.4.3 htmldate-1.10.0 justext-3.
 <p>Code tersebut berfungsi untuk melakukan web scraping artikel berita dari <a class="reference external" href="http://Detik.com">Detik.com</a> dengan kategori “Sport” dan “Finance” dengan masing masing label berjumlah 100 artikel dengan memanfaatkan pustaka trafilatura untuk mengekstrak dan membersihkan teks artikel secara otomatis dari mode single-page, lalu menyusun seluruh data bersih tersebut kedalam sebuah DataFrame pandas yang rapi dengan 3 kolom (ID, Isi Berita&lt; Label).</p>
 </section>
 <section id="save-download-file-excel">
-<h2><strong>Save &amp; Download File Excel</strong><a class="headerlink" href="#save-download-file-excel" title="Permalink to this heading">#</a></h2>
+<h2>Save &amp; Download File Excel<a class="headerlink" href="#save-download-file-excel" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">files</span>
@@ -809,7 +809,7 @@ Successfully installed courlan-1.4.0 dateparser-1.4.3 htmldate-1.10.0 justext-3.
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Profile Pemilik Repository</strong></p>
+        <p class="prev-next-title">Profile Repository</p>
       </div>
     </a>
 </div>
@@ -828,9 +828,9 @@ Successfully installed courlan-1.4.0 dateparser-1.4.3 htmldate-1.10.0 justext-3.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-library"><strong>Install Library</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi"><strong>Ambil Isi Artikel Lengkap Menggunakan trafilatura (tqdm + Paginasi)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-download-file-excel"><strong>Save &amp; Download File Excel</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-library">Install Library</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ambil-isi-artikel-lengkap-menggunakan-trafilatura-tqdm-paginasi">Ambil Isi Artikel Lengkap Menggunakan trafilatura (tqdm + Paginasi)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-download-file-excel">Save &amp; Download File Excel</a></li>
 </ul>
   </nav></div>
 
@@ -845,7 +845,7 @@ Successfully installed courlan-1.4.0 dateparser-1.4.3 htmldate-1.10.0 justext-3.
   <div class="footer-item">
     
 <p class="component-author">
-By Bilqizah Rahma
+By Bilqizah Rahma Ilayya Syahdewi
 </p>
 
   </div>
